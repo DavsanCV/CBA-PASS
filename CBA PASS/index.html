@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cba Pass</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/MediaQ.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mayor-a-1920.css">
+</head>
+
+<body>
+    <header>
+        <img src="css/img/LOGO CBA PASS.png" alt="Logo principal de CBA PASS">
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <nav class="navbar">
+            <ul class="nav-li">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="mailto:dsantiagocanvar@gmail.com">Contacto</a></li>
+                <li><a href="#inicio">Iniciar sesión</a></li>
+                <li><a href="#inicio">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="principal">
+            <h1>Cba<span>Pass</span></h1><br>
+            <h2>Accede <span>fácil</span> y <span id="azul">seguro</span></h2><br><br>
+            <p><strong>Cba<span>Pass</span></strong> es un sistema de de <span id="azul"><strong>carnets
+                        virtuales</strong></span> para instituciones corporativas y educativas para gestionar el
+                <span><strong>ingreso</strong></span> de personal a las instalaciones.</p>
+            <br><br><br>
+            <button><a download="#">¡Descargala ya!</a></button>
+        </article>
+        <article class="secundario">
+        
+            <article class="usar">
+                <h1>¿Por qué deberías usar Cba<span id="verde">Pass?</span></h1>
+                <p>Cba<span id="verde">Pass</span> te ayudará a mantener las instalaciones seguras de personas no
+                    autorizadas evitando suplantaciones de identidad y personas malintencionadas y asimismo te permitirá
+                    generar estadísticas de uso para analizar eventos y procesos dentro de tus instalaciones.</p>
+            </article>
+            <section class="decoracion">
+                <div class="c1"></div>
+                <div class="aprendiz">
+                    <div class="check"></div>
+                </div>
+                
+                <div class="c2"></div>
+            </section>
+        </article>
+
+        <article class="cbacare">
+            <h1>Cba<span id="verde">Care+</span></h1>
+            <p><strong>Cba<span id="verde">Care+</span></strong> es la funcionalidad gratuita que agilizará los procesos
+                de atención médica en caso de accidentes dentro de las instalaciones proporcionando tu información vital
+                de forma eficaz al personal médico para proceder de manera oportuna y correcta.</p>
+        </article>
+    </main>
+    <footer>
+        <article class="info">
+            <h3>Contacto</h3>
+            <ul>
+                <li><i class="fa-regular fa-envelope fa-2x"></i><a
+                        href="mailto:dsantiagocanvar@gmail.com">dsantiagocanvar@gmail.com</a></li>
+                <li><i class="fab fa-whatsapp fa-2x"></i><a href="https://wa.me/3193831573">+57 319 383 1573</a></li>
+            </ul>
+        </article>
+        <article class="info">
+            <h3>Síguenos</h3>
+            <ul id="ul-info ">
+                <li><i class="fab fa-facebook fa-2x"></i><a href="https://facebook.com" target="_blank">Facebook</a>
+                </li>
+                <li><i class="fab fa-twitter fa-2x"></i><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><i class="fab fa-instagram fa-2x"></i><a href="https://instagram.com" target="_blank">Instagram</a>
+                </li>
+            </ul>
+        </article>
+        <article class="info">
+            <h3>Legal</h3>
+            <ul id="ul-info">
+                <li><a href="/terminos-y-condiciones.html">Términos y Condiciones</a></li>
+                <li><a href="/politica-de-privacidad.html">Política de Privacidad</a></li>
+            </ul>
+        </article>
+        <p id="copy">&copy; 2024 CbaPas. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-li');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

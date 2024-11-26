@@ -1,0 +1,16 @@
+@media  (min-width: 1920px) {
+    .secundario {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--negro);
+        padding: 5%;
+    }
+    
+    .decoracion {
+        margin-left: 20%;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        grid-row: 1/2;
+    }
+}

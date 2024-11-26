@@ -1,0 +1,296 @@
+:root {
+    --verde: #7ED957;
+    --azul: #24DEFF;
+    --negro: #212529;
+    --nav: #1d2124;
+    --fuente-blanco: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--negro);
+}
+
+header img {
+    padding: 1%;
+    width: 15%;
+    height: auto;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--negro);
+}
+.menu-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+.nav-li {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-li a {
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--fuente-blanco);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.nav-li a:hover {
+    color: var(--verde);
+}
+
+.principal {
+    text-align: start;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(img/principal.png);
+    background-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10%;
+    transition: 1.5s ease;
+    background-repeat: no-repeat;
+}
+
+.principal:hover {
+    background-size: 120%;
+}
+
+.principal h1 {
+    font-size: 4.5rem;
+    color: var(--fuente-blanco);
+    transition: 1.5s ease
+}
+
+.principal span {
+    color: var(--verde);
+}
+
+.principal h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--fuente-blanco);
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.principal p {
+    font-size: 1.5rem;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--fuente-blanco);
+}
+
+.principal button {
+    height: 55px;
+    width: 250px;
+    background: linear-gradient(to right, #7ED957, #0097B2);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--fuente-blanco);
+    transition: 0.4s ease;
+}
+
+.principal button:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.secundario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--negro);
+    padding: 5%;
+
+}
+
+.decoracion {
+    margin-left: 10%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    grid-row: 1/2;
+}
+.usar {
+    grid-column: 2/3;
+    color: var(--fuente-blanco);
+}
+
+.aprendiz {
+    background-image: url('img/estudiante1.jpg');
+    background-position: center;
+    background-size: 150%;
+    border-radius: 50%;
+    height: 550px;
+    width: 550px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    top: 750px;
+    transition: background-size 1.5s ease;
+}
+
+.aprendiz:hover {
+    background-size: 170%;
+}
+
+.aprendiz .check {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    border: 20px solid var(--negro);
+    background-image: url('img/check.png');
+    background-size: 100%;
+    background-position: center;
+    transition: background-size 0.5s ease;
+}
+
+.check:hover {
+    background-size: 125%;
+}
+
+.c1 {
+    width: 100px;
+    height: 100px;
+    background-color: var(--verde);
+    border-radius: 50%;
+
+}
+
+.c2 {
+    width: 150px;
+    height: 150px;
+    background-color: var(--verde);
+    border-radius: 50%;
+
+}
+
+
+
+.usar h1 {
+    text-align: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 5%;
+}
+
+.usar p {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #343A40;
+    border-radius: 15px;
+    text-align: justify;
+    position: relative;
+    font-size: 2.5em;
+    padding: 5%;
+}
+
+.cbacare {
+    padding: 10% 0 8% 10%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(img/medicos.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1.5s ease;
+    background-size: 115%;
+}
+
+.cbacare:hover {
+    background-size: 125%;
+    background-position: right;
+}
+
+.cbacare h1 {
+    color: var(--fuente-blanco);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 5rem;
+}
+
+.cbacare p {
+    color: var(--fuente-blanco);
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40%;
+    background-color: #343A40;
+    border-radius: 10px;
+    padding: 2%;
+    transition: 1.5s ease;
+}
+
+.cbacare p:hover {
+    margin-top: 5%;
+    transform: scale(1.1);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--fuente-blanco);
+    background-color: var(--nav);
+}
+
+.info {
+    padding: 15%;
+    background-color: var(--negro);
+}
+
+.info h3 {
+    color: var(--verde);
+    border-bottom: 2px solid var(--verde);
+    padding-bottom: 5%;
+}
+
+.info ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.info li {
+    margin-top: 10%;
+    margin-bottom: 8%;
+}
+
+.info a {
+    margin: 0 20px;
+    color: var(--fuente-blanco);
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: var(--verde);
+    text-decoration: underline;
+}
+
+#copy {
+    grid-column: 1/4;
+    margin: 2%;
+    text-align: center;
+}
+
+#verde {
+    color: var(--verde);
+}
+
+#azul {
+    color: var(--azul);
+}
